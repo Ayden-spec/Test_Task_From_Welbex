@@ -19,5 +19,5 @@ DataBase: PostgreSQL.
 
 Настройки server-side лежат в файле server/config/default.json
 
-БД файл: server/takeoff.sql
+БД файл: server/welbex.sql
 

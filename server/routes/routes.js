@@ -5,12 +5,12 @@ const router = new Routes();
 
 router.get('/:id', async (req, res) => {
     try {
-        pg.executeQuery(`SELECT name, date, quantity, distance, id FROM name LIMIT 10 OFFSET ${req.params.id * 10}`, (result1, error) => {
+        pg.executeQuery(`SELECT name, date, quantity, distance, id FROM welbex LIMIT 10 OFFSET ${req.params.id * 10}`, (result1, error) => {
             if (error) {
                 res.status(400).json({ message: `[ERROR] ${error}` })
                 return
             }
-            pg.executeQuery(`SELECT id FROM name`, (result, error) => {
+            pg.executeQuery(`SELECT id FROM welbex`, (result, error) => {
                 if (error) {
                     res.status(400).json({ message: `[ERROR] ${error}` })
                     return
