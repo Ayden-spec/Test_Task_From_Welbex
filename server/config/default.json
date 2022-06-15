@@ -1,0 +1,9 @@
+{
+    "serverPort": 5000,
+
+    "pg_host": "localhost",
+    "pg_user": "postgres",
+    "pg_db": "postgres",
+    "pg_pass": "123456",
+    "pg_port": 5432
+}
